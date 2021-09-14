@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.mddstudio.mvvmfavdish.view.fragment.AllDishesFrag"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_all_dishes" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_DIsh_details"
+            app:destination="@id/DIsh_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.mddstudio.mvvmfavdish.view.fragment.FavDishFrag"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_fav" >
+
+        <action
+            android:id="@+id/action_navigation_Fav_to_DIsh_details"
+            app:destination="@id/DIsh_details" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.mddstudio.mvvmfavdish.view.fragment.RandomDishFrag"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/DIsh_details"
+        android:name="com.mddstudio.mvvmfavdish.view.fragment.DIsh_details"
+        android:label="fragment_d_ish_details"
+        tools:layout="@layout/fragment_d_ish_details" >
+
+        <argument
+            android:name="dishDetails"
+            app:argType="com.mddstudio.mvvmfavdish.model.entities.FavDish" />
+    </fragment>
+</navigation>

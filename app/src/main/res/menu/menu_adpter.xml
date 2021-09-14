@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Edit Dish"
+        android:id="@+id/edit_Dia"
+        android:icon="@drawable/ic_edit"/>
+
+    <item android:title="Delete Dish"
+        android:id="@+id/delete_Dia"
+        android:icon="@drawable/ic_edit"/>
+</menu>

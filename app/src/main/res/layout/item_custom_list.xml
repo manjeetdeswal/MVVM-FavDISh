@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customText"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_20sdp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="1dp"
+        android:background="@color/primaryTextColor"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
